@@ -18,6 +18,19 @@ pip install -r requirements.txt
 python3 l5p_kbl.py --help
 ```
 
+Добавляем возможность переключать раскладку для непривилигированного пользователя.
+Для этого создаем файл: /etc/udev/rules.d/99-kblight.rules с текстом:
+```
+SUBSYSTEM=="usb", ATTR{idVendor}=="048d", ATTR{idProduct}=="c965", MODE="0666"
+```
+
+Перезагружаем правила:
+
+```
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+
+
 Этот скрипт можно использовать как переключатель подсветки клавиатуры вместо стандартного. 
 Читайте README_l5p_klb.md
 
