@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <X11/Xutil.h>
 #include <X11/XKBlib.h>
-#include <system.h>
+#include <stdlib.h>
 int main(int argc, char **argv)
 {
         XEvent e;
