@@ -27,11 +27,11 @@ int main(int argc, char **argv)
             if (xkbEvent->any.xkb_type == XkbStateNotify) {
                 int lang = xkbEvent->state.group;
                 if (lang == 1) {
-                     system("~/scripts/l5p_ledlayout/venv/bin/python3 ~/scripts/l5p_ledlayout/l5p_kbl.py static ff0000");
+                     system("~/scripts/l5p_ledlayout/env/bin/python3 ~/scripts/l5p_ledlayout/l5p_kbl.py static ff0000");
 
                 } else {
 
-		     system("~/scripts/l5p_ledlayout/venv/bin/python3 ~/scripts/l5p_ledlayout/l5p_kbl.py static ffffff");
+		     system("~/scripts/l5p_ledlayout/env/bin/python3 ~/scripts/l5p_ledlayout/l5p_kbl.py static ffffff");
 
                 }
             }
