@@ -1,6 +1,7 @@
 # l5p_ledlayout
-Переключатель цвета клавиатуры Lenovo Legion 5 Pro в зависимости от раскладки для Linux
-Создан из двух из двух проектов.
+Переключатель цвета клавиатуры Lenovo Legion 5 Pro в зависимости от раскладки для Linux.
+
+Создан из двух проектов.
 Переключатель раскладки - https://github.com/imShara/l5p-kbl
 Кэтчер переключателя раскладки - немного доработанный скрипт из этой ветки - https://stackoverflow.com/questions/35569562/how-to-catch-keyboard-layout-change-event-and-get-current-new-keyboard-layout-on
 
